@@ -1,0 +1,30 @@
+
+html{
+    background-color: #d1caa4;
+}
+.wrapper{
+    align-content: center;   
+    background: #f3ec9d;
+    text-align: center;
+    margin: 10%;
+}
+.display-time{
+    display: none;
+}
+
+#restart{
+    display: none;
+}
+
+.title{
+    background: rgb(213, 233, 125);
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#start{
+    width: 15%;
+    background-color: rgb(74, 133, 74);
+    font-size: 85%;
+    margin: 15% auto 10%;
+}

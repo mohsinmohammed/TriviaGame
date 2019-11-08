@@ -43,3 +43,7 @@ html{
     margin: 0.5% 10% 0.5%;
     background-color: rgb(202, 204, 90);
 }
+
+.display-answer{
+    display: none;
+}

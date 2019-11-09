@@ -36,6 +36,8 @@ html{
 
 .question{
     margin-top: 0px;
+    width: 75%;
+    margin: 0.5% 10% 2%;
 }
 
 .ch-a, .ch-b, .ch-c, .ch-d{

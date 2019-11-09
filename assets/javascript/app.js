@@ -139,19 +139,23 @@ function displayAnswer(){
       $(".display-answer").append("<p> Time's up <\p>");
       $(".display-answer").append("Correct Answer: " + trivia.answer[numQuestion]);
     }
-    
-
-    if(trivia.choices[numQuestion][trivia.userAnswer[numQuestion]] === trivia.answer[numQuestion])
-   {
-    $(".display-answer").append("<p>You Answered: " + trivia.choices[numQuestion][trivia.userAnswer[numQuestion]] +"<\p>");
-    $(".display-answer").append("<p>" + message + "<\p>");
-   }
     else
     {
-      $(".display-answer").append("<p>You Answered: " + trivia.choices[numQuestion][trivia.userAnswer[numQuestion]] +"<\p>");
-      $(".display-answer").append("<p>" + message + "<\p>");
-      $(".display-answer").append("Correct Answer: " + trivia.answer[numQuestion]);
+      if(trivia.choices[numQuestion][trivia.userAnswer[numQuestion]] === trivia.answer[numQuestion])
+      {
+       $(".display-answer").append("<p>You Answered: " + trivia.choices[numQuestion][trivia.userAnswer[numQuestion]] +"<\p>");
+       $(".display-answer").append("<p>" + message + "<\p>");
+      }
+       else 
+       {
+         $(".display-answer").append("<p>You Answered: " + trivia.choices[numQuestion][trivia.userAnswer[numQuestion]] +"<\p>");
+         $(".display-answer").append("<p>" + message + "<\p>");
+         $(".display-answer").append("Correct Answer: " + trivia.answer[numQuestion]);
+       }
     }
+    
+
+   
     
     
     // to show the next question the variable numQuestion is incremented
